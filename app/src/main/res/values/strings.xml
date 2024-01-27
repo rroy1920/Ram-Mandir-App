@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ram Mandir Quiz</string>
+    <string name="nav_open">Open Drawer</string>
+    <string name="nav_close">Close Drawer</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

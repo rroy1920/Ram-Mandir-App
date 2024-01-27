@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="gray1">#8A8585</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F40404</color>
+    <color name="bhagwa">#DC3C14</color>
+    <color name="etbg">#F4D5C8</color>
+    <color name="etborder">#FBB281</color>
+    <color name="yellow">#FF9800</color>
+    <color name="blue">#2B3499</color>
+    <color name="yellow1">#F4C430</color>
+
+</resources>

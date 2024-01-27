@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".SplashActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/loginll"
+       android:gravity="center_vertical"
+       android:padding="32dp"
+       android:orientation="vertical"
+       android:layout_above="@id/loginImg">
+
+
+       <TextView
+           style="@style/TextAppearance.AppCompat.Title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Login Now" />
+
+       <TextView
+           style="@style/TextAppearance.AppCompat.Body1"
+           android:layout_width="match_parent"
+           android:layout_marginTop="8dp"
+           android:layout_height="wrap_content"
+           android:text="Please login to continue." />
+
+       <EditText
+           android:id="@+id/etEmailAddress"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:background="@drawable/edt_background"
+           android:hint="Email"
+           android:layout_marginTop="32dp"
+           android:textSize="16sp"
+           android:inputType="textEmailAddress" />
+
+       <EditText
+           android:id="@+id/etPassword"
+           android:background="@drawable/edt_background"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textColor="@color/black"
+
+           android:layout_marginTop="16dp"
+           android:hint="Password"
+           android:textSize="16sp"
+
+           android:inputType="textPassword" />
+
+       <Button
+           android:id="@+id/btnLogin"
+           android:layout_width="match_parent"
+           android:layout_marginTop="24dp"
+           android:layout_height="wrap_content"
+           android:text="Log In" />
+
+       <TextView
+           android:id="@+id/btnSignUp"
+           android:textColor="@color/gray1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:textAlignment="center"
+           android:text="Don't have an account? Signup" />
+   </LinearLayout>
+
+
+  
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/loginImg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ram_mandir_image" />
+
+</RelativeLayout>
