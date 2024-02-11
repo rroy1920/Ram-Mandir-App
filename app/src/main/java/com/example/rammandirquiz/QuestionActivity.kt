@@ -9,6 +9,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rammandirquiz.databinding.ActivityQuestionBinding
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.gson.Gson
 import kotlin.properties.Delegates
@@ -32,6 +35,13 @@ class QuestionActivity : AppCompatActivity() {
         index=1
         setupFireStore()
         setUpEventListner()
+
+        val mAdView=findViewById<AdView>(R.id.adView)
+
+        MobileAds.initialize(this){}
+
+        val adRequest: AdRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
     }
 
     private fun setUpEventListner() {

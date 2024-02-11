@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.nav_home-> replaceFragment(HomeFrag())
                 R.id.nav_Quiz->replaceFragment(QuizFrag())
+                R.id.nav_pray->replaceFragment(Prey())
+                R.id.nav_news->replaceFragment(News())
+                R.id.nav_feed->replaceFragment(Feeds())
 
                 else ->{
 

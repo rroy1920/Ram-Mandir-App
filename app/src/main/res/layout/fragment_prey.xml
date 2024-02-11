@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_tt"
+    tools:context=".Prey">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/flower_two"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        android:id="@+id/anim_flower_two"/>
+
+
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/idol"
+        android:id="@+id/ram_lalla"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/button_bg"
+                android:padding="8dp"
+                android:layout_margin="15dp"
+                android:id="@+id/crBtn"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/flower"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/button_bg"
+                android:padding="8dp"
+                android:id="@+id/flBtn"
+                android:layout_margin="15dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/bell"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/button_bg"
+                android:padding="8dp"
+                android:id="@+id/redFlBtn"
+                android:layout_margin="15dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/fireworks"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/donation"
+                android:scaleType="centerCrop"
+                android:background="@drawable/button_bg"
+                android:padding="10dp"
+                android:layout_margin="15dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/zakat"/>
+
+        </LinearLayout>
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim_firework"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/crackers" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

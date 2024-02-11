@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
 import com.example.rammandirquiz.databinding.ActivityResultBinding
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.gson.Gson
 
 class ResultActivity : AppCompatActivity() {
@@ -16,6 +19,13 @@ class ResultActivity : AppCompatActivity() {
         binding=ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setUpViews()
+
+        val mAdView=findViewById<AdView>(R.id.adView)
+
+        MobileAds.initialize(this){}
+
+        val adRequest: AdRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
     }
 
     private fun setUpViews() {
