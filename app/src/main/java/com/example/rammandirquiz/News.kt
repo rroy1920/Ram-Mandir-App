@@ -57,6 +57,10 @@ class News : Fragment() {
         val adRequest: AdRequest = AdRequest.Builder().build()
         mAdView.loadAd(adRequest)
         getNews()
+
+
+
+
     }
 
     private fun getNews() {
@@ -73,7 +77,12 @@ class News : Fragment() {
                     val recyclerView=view?.findViewById<RecyclerView>(R.id.recyclerHeadlines)
 
                     recyclerView?.layoutManager= LinearLayoutManager(context)
-                    recyclerView?.adapter= adapter
+
+
+                    val admobNativeAdAdapter= AdmobNativeAdAdapter.Builder.with("/6499/example/native",
+                        adapter, "medium"
+                    ).adItemInterval(7).build()
+                    recyclerView?.adapter= admobNativeAdAdapter
 
 
                 }

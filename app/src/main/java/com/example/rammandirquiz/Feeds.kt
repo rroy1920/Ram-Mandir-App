@@ -65,7 +65,12 @@ class Feeds : Fragment(),TextToSpeech.OnInitListener {
             recyclerView= view.findViewById(R.id.feeds_rv)
             recyclerView.layoutManager=layoutManager
             adapter = FeedsAdapter(requireContext(),data!!,tts)
-            recyclerView.adapter= adapter
+
+            val admobNativeAdAdapter= AdmobNativeAdAdapter.Builder.with("/6499/example/native",
+                adapter, "medium"
+            ).adItemInterval(7).build()
+            recyclerView.adapter= admobNativeAdAdapter
+
     }
 
 

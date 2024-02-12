@@ -61,7 +61,12 @@ class HomeFrag : Fragment() {
             recyclerView= view.findViewById(R.id.home_rv)
             recyclerView.layoutManager=layoutManager
             adapter = data?.let { FeedAdapter(requireContext(), it) }!!
-            recyclerView.adapter= adapter
+
+            val admobNativeAdAdapter= AdmobNativeAdAdapter.Builder.with("/6499/example/native",
+                adapter, "medium"
+            ).adItemInterval(5).build()
+            recyclerView.adapter = admobNativeAdAdapter
+
         }
 
     }

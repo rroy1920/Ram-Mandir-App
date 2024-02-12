@@ -54,7 +54,12 @@ class QuizFrag : Fragment() {
             recyclerView.layoutManager=layoutManager
             recyclerView.setHasFixedSize(true)
             adapter = Category_Aadapter(requireContext(),quizArrayList)
-            recyclerView.adapter= adapter
+
+            val admobNativeAdAdapter= AdmobNativeAdAdapter.Builder.with("/6499/example/native",
+                adapter, "small"
+            ).adItemInterval(5).build()
+            recyclerView.adapter= admobNativeAdAdapter
+
         }
 
     }
